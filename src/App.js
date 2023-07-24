@@ -4,8 +4,10 @@ import { Data as appData } from './data';
 import { Routes, Route } from 'react-router-dom';
 
 import NavBar from './main/NavBar/NavBar';
+
 import HomePage from './main/Pages/HomePage/HomePage';
 import AboutPage from './main/Pages/AboutPage/AboutPage';
+import ContactPage from './main/Pages/ContactPage/ContactPage';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}></Route>
         <Route path='/about' element={<AboutPage/>}></Route>
+        <Route path='/contact' element={<ContactPage/>}></Route>
       </Routes>
     </div>
   );
