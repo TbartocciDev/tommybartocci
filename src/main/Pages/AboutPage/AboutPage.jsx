@@ -7,9 +7,6 @@ export default function AboutPage() {
         <main className="AboutPage">
             <div className="content" id="page-content">
                 <h1>About Page</h1>
-                <Link to="/">
-                    <h2>Home Page</h2>
-                </Link>
             </div>
         </main>
     )
