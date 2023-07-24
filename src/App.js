@@ -2,6 +2,7 @@ import './App.css';
 import { Data as appData } from './data';
 
 import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import NavBar from './main/NavBar/NavBar';
 

@@ -6,8 +6,8 @@ export default function NavBar({ data }) {
     return (
         <main className="NavBar">
             <div className="content">
-                {data.pageLinks.map((link) => (
-                    <Link to={link.url}>
+                {data.pageLinks.map((link, key) => (
+                    <Link to={link.url} key={key}>
                         <h2>{link.title}</h2>
                     </Link>
                 ))}
