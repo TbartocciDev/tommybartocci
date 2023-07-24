@@ -1,4 +1,5 @@
 import './App.css';
+import { Data as appData } from './data';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ import AboutPage from './main/Pages/AboutPage/AboutPage';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar data={appData.NavBar}/>
       <Routes>
         <Route path='/' element={<HomePage/>}></Route>
         <Route path='/about' element={<AboutPage/>}></Route>

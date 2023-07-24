@@ -2,9 +2,15 @@
     height: 10vh;
     width: 100%;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    align-items: end;
     position: fixed;
     z-index: 1;
     background-color: rgb(20, 20, 20);
+}
+.NavBar .content {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
