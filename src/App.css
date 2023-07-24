@@ -9,3 +9,6 @@ body {
   background-color: black;
   color: white;
 }
+#page-content {
+  padding-top: 10vh;
+}
