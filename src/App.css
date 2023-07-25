@@ -20,23 +20,23 @@ body {
 }
 #main-section {
   width: 100%;
-  
+  padding-bottom: 8vh;
 }
 a:active, a:visited, a:link {
   text-decoration: none;
   color: white;
 }
 h1 {
-
+  pointer-events: none;
 }
 h2 {
-  
+  pointer-events: none;
 }
 h3 {
-  
+  pointer-events: none;
 }
 h4 {
-  
+  pointer-events: none;
 }
 @media (max-width: 800px) {
   #page-content {

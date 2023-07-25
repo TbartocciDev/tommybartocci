@@ -12,13 +12,24 @@ import AboutPage from './main/Pages/AboutPage/AboutPage';
 import ContactPage from './main/Pages/ContactPage/ContactPage';
 
 function App() {
+
+  const [page, setPage] = useState("home");
+  const [subject, setSubject] = useState("hobbies");
+
   return (
     <div className="App">
       <NavBar data={appData.NavBar}/>
       <DropMenu data={appData.NavBar.pageLinks}/>
       <Routes>
         <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/about' element={<AboutPage data={appData.AboutPage}/>}></Route>
+        <Route 
+          path='/about' 
+          element={
+            <AboutPage 
+              data={appData.AboutPage}
+              subject={subject}
+              setSubject={setSubject}
+              setPage={setPage}/>}></Route>
         <Route path='/contact' element={<ContactPage/>}></Route>
       </Routes>
     </div>

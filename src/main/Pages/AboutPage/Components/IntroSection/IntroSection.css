@@ -1,9 +1,6 @@
 .IntroSection {
     padding-top: 4vh;
 }
-.IntroSection h1 {
-    padding-bottom: 4vh;
-}
 .IntroSection h2 {
     padding-bottom: 2vh;
 }
@@ -41,6 +38,20 @@
 }
 #funny-photo {
     content: url('/public/face-photos/funny.jpeg');
+}
+
+@media (max-width: 1100px) {
+    .IntroSection .summary {
+        grid-template-columns: 1fr;
+    }
+    .IntroSection .img-content {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+    .IntroSection .img-div {
+        width: 40%;
+    }
 }
 
 @media (max-width: 800px) {
