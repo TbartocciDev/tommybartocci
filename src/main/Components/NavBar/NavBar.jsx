@@ -1,8 +1,21 @@
 import "./NavBar.css"
 
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
-export default function NavBar({ data }) {
+export default function NavBar({ data, page }) {
+
+    function updateLinks() {
+        const links = document.querySelectorAll('.page-link')
+        links.forEach((l) => {
+            l.removeAttribute('id')
+            if (l.children[0].innerHTML.toLowerCase() === page) {
+                l.setAttribute('id', 'selected-link')
+            }
+        })
+    }
+
+    updateLinks()
 
     function handleHamburgerClick() {
         const dropMenu = document.querySelector('.menu-content')
@@ -16,6 +29,7 @@ export default function NavBar({ data }) {
             dropMenu.setAttribute('id','visibleDrop')
             dropShadow.setAttribute('id','visibleShadow')
         }
+        updateLinks()
     }
 
     return (
@@ -24,7 +38,7 @@ export default function NavBar({ data }) {
                     <div className="page-links"
                     style={{gridTemplateColumns:`repeat(${data.pageLinks.length}, 150px)`}}>
                         {data.pageLinks.map((link, key) => (
-                            <Link to={link.url} key={key}>
+                            <Link to={link.url} key={key} className="page-link">
                                 <h2>{link.title}</h2>
                             </Link>
                         ))}

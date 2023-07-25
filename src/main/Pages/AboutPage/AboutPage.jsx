@@ -11,9 +11,10 @@ export default function AboutPage({ data, subject, setSubject, setPage }) {
     useEffect(() => {
         const docTitle = document.querySelector('#website-title')
         docTitle.innerHTML = 'Tommy Bartocci: Learn About'
-        setSubject(sessionStorage.getItem('interest'))
-        setPage('about')
     }, []);
+    
+    setSubject(sessionStorage.getItem('interest'))
+    setPage('about')
 
     if (!sessionStorage.getItem('interest')) {
         sessionStorage.setItem('interest', 'hobbies')
