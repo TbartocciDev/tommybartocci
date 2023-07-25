@@ -1,0 +1,58 @@
+.IntroSection {
+    padding-top: 4vh;
+}
+.IntroSection h1 {
+    padding-bottom: 4vh;
+}
+.IntroSection h2 {
+    padding-bottom: 2vh;
+}
+.IntroSection .summary {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+.IntroSection .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.IntroSection .img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+}
+.IntroSection .img-div {
+    width: 70%;
+}
+.IntroSection img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#normal-photo {
+    content: url('/public/face-photos/straight.jpeg');
+}
+#normal-photo:hover {
+    content: url('/public/face-photos/smirk.jpeg');
+}
+#funny-photo {
+    content: url('/public/face-photos/funny.jpeg');
+}
+
+@media (max-width: 800px) {
+    .IntroSection .summary {
+        grid-template-columns: 1fr;
+    }
+    .IntroSection .img-content {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+    .IntroSection .img-div {
+        width: 65%;
+    }
+}

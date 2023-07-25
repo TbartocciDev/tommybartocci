@@ -18,6 +18,10 @@ body {
   padding-top: 10vh;
   width: 70%;
 }
+#main-section {
+  width: 100%;
+  
+}
 a:active, a:visited, a:link {
   text-decoration: none;
   color: white;

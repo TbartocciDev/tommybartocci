@@ -18,7 +18,7 @@ function App() {
       <DropMenu data={appData.NavBar.pageLinks}/>
       <Routes>
         <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/about' element={<AboutPage/>}></Route>
+        <Route path='/about' element={<AboutPage data={appData.AboutPage}/>}></Route>
         <Route path='/contact' element={<ContactPage/>}></Route>
       </Routes>
     </div>

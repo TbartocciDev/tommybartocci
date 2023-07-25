@@ -11,6 +11,7 @@ export default function DropMenu({ data }) {
         dropShadow.setAttribute('id','hiddenShadow')
     }
 
+
     return (
         <main className="DropMenu">
             <div className="menu-content">
@@ -25,7 +26,7 @@ export default function DropMenu({ data }) {
                     ))}
                 </div>
             </div>
-            <div className="menu-shadow"></div>
+            <div className="menu-shadow" onClick={handleLinkClick}></div>
         </main>
     )
 }
