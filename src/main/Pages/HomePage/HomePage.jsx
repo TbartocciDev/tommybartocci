@@ -11,7 +11,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <main className="HomePage">
+        <main className="HomePage" id="main-page">
             <div className="content" id="page-content">
                 <h1>Home Page</h1>
             </div>

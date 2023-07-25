@@ -11,7 +11,7 @@ export default function AboutPage() {
     }, []);
     
     return (
-        <main className="AboutPage">
+        <main className="AboutPage" id="main-page">
             <div className="content" id="page-content">
                 <h1>About Page</h1>
             </div>

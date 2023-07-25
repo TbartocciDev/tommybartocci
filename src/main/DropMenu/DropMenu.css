@@ -1,0 +1,45 @@
+.DropMenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    position: fixed; 
+}
+.DropMenu .menu-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -35vh;
+    background-color: rgb(20, 20, 20);
+    transition: 0.75s;
+}
+.DropMenu .links-container {
+    width: 90%;
+    display: grid;
+}
+.DropMenu .page-link {
+    display: flex;
+    align-items: center;
+}
+.DropMenu .menu-shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    background-color: rgba(24, 24, 24, 0.623);
+    opacity: 0;
+    transition: 0.75s;
+}
+#hiddenDrop {
+    margin-top: -35vh;
+}
+#visibleDrop {
+    margin-top: 0vh;
+}
+#hiddenShadow{
+    opacity: 0;
+}
+#visibleShadow {
+    opacity: 1;
+}
