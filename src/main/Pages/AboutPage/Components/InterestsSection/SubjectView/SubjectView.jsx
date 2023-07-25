@@ -4,9 +4,10 @@ import InterestView from "./InterestView/InterestView"
 
 export default function SubjectView({ data, subject, setSubject }) {
 
-    const subjectBtns = document.querySelectorAll('.subject-btn')
+    var subjectBtns = document.querySelectorAll('.subject-btn')
 
     function updateBtns() {
+        subjectBtns = document.querySelectorAll('.subject-btn')
         subjectBtns.forEach((btn) => {
             btn.removeAttribute('id')
             if (btn.children[0].innerHTML.toLowerCase() === subject) {
