@@ -3,7 +3,7 @@
     --openDark: rgba(4, 105, 9, 0.7);
     --closedLight: red;
     --closedDark: rgba(112, 7, 7, 0.7);
-    --exploringLight: rgb(55, 76, 239);
+    --exploringLight: rgb(21, 44, 215);
     --exploringDark: rgba(7, 7, 160, 0.7);
 }
 .StatusBar {

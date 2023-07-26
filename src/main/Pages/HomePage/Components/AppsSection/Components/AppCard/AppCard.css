@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding-top: 4vh;
-    /* justify-content: end; */
 }
 .AppCard h2 {
     color: white;
@@ -32,7 +31,6 @@
     aspect-ratio: 1;
     border-radius: 1vh;
     margin-right: 2vw;
-    background-color: blue;
 }
 .AppCard .link {
     width: fit-content;
@@ -42,16 +40,44 @@
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: rgba(0, 96, 128, 0.7);
+    background-color: var(--exploringDark);
     border-radius: 1.5vh;
     transition: 1s ease;
 }
 .AppCard .details-btn h2 {
     width: 100%;
     padding: 1.5vh;
-    white-space: nowrap;
+    color: var(--exploringLight);
     text-align: center;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #af0f0f, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: glimmer 3.5s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: var(--exploringLight);
 }
 .AppCard .details-btn:hover {
     transform: scale(103%);
+}
+
+@keyframes glimmer {
+    0% {
+        background-position: -500%;
+        scale: 100%;
+    }
+    10% {
+        background-position: -500%;
+    }
+    40% {
+        scale: 101%;
+    }
+    80% {
+        scale: 100%;
+        background-position: 500%;
+    }
+    100% {
+        scale: 100%;
+        background-position: 500%;
+    }
 }
