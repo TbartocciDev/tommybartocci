@@ -48,7 +48,7 @@
 }
 .AppCard .details-btn h2 {
     width: 100%;
-    padding: 1.5vh;
+    padding: 15px;
     color: var(--appDetailLight);
     text-align: center;
     white-space: nowrap;

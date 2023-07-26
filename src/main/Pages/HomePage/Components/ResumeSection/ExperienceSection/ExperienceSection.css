@@ -5,3 +5,9 @@
     color: white;
     text-decoration: underline;
 }
+
+@media (max-width: 1100px) {
+    .ExperienceSection {
+        padding-top: 40px;
+    }
+}
