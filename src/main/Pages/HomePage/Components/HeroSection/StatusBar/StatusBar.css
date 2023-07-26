@@ -79,4 +79,7 @@
     .StatusBar {
         max-width: 100%;
     }
+    .StatusBar h2 {
+        font-size: 5vw;
+    }
 }
