@@ -14,7 +14,7 @@
     aspect-ratio: 1;
     border-radius: 50%;
 }
-.StatusBar h2 {
+.StatusBar h3 {
     padding-left: 10px;
     white-space: nowrap;
     background: linear-gradient(90deg, #af0f0f, #fff, #000);
@@ -78,8 +78,5 @@
 @media (max-width: 1100px) {
     .StatusBar {
         max-width: 100%;
-    }
-    .StatusBar h2 {
-        font-size: 5vw;
     }
 }

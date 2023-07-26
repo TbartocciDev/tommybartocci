@@ -8,7 +8,7 @@ export default function StatusBar({ data }) {
         <Link to="/contact">
             <div className="StatusBar" id="open">
                 <div className="circle"></div>
-                <h2>{data.info}</h2>
+                <h3>{data.info}</h3>
             </div>
         </Link>
     )
