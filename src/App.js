@@ -11,6 +11,8 @@ import HomePage from './main/Pages/HomePage/HomePage';
 import AboutPage from './main/Pages/AboutPage/AboutPage';
 import ContactPage from './main/Pages/ContactPage/ContactPage';
 
+import AppDetailPage from './main/Pages/AppDetailPage/AppDetailPage';
+
 function App() {
 
   const [page, setPage] = useState("home");
@@ -30,7 +32,13 @@ function App() {
             data={appData.AboutPage}
             subject={subject}
             setSubject={setSubject}
-            setPage={setPage}/>}></Route>
+            setPage={setPage}/>}>
+        </Route>
+        <Route path='/:appName' element={
+          <AppDetailPage
+          data={appData.HomePage.appsSection.applications}
+          />}>
+        </Route>
         <Route path='/contact' element={<ContactPage/>}></Route>
       </Routes>
     </div>

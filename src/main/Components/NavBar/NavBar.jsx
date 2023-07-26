@@ -17,6 +17,10 @@ export default function NavBar({ data, page }) {
 
     updateLinks()
 
+    function handleLinkClick() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+
     function handleHamburgerClick() {
         const dropMenu = document.querySelector('.menu-content')
         const dropShadow = document.querySelector('.menu-shadow')
@@ -38,7 +42,7 @@ export default function NavBar({ data, page }) {
                     <div className="page-links"
                     style={{gridTemplateColumns:`repeat(${data.pageLinks.length}, 150px)`}}>
                         {data.pageLinks.map((link, key) => (
-                            <Link to={link.url} key={key} className="page-link">
+                            <Link to={link.url} key={key} className="page-link" onClick={handleLinkClick}>
                                 <h2>{link.title}</h2>
                             </Link>
                         ))}
