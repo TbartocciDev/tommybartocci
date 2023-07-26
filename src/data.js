@@ -1,3 +1,5 @@
+const { default: ResumeSection } = require("./main/Pages/HomePage/Components/ResumeSection/ResumeSection")
+
 const Data = {
     NavBar: {
         pageLinks: [
@@ -23,6 +25,27 @@ const Data = {
             status: {
                 status: "open",
                 info: "Looking for a new opportunity"
+            }
+        },
+        resumeSection: {
+            header: "Resume",
+            work: {
+                header: "Work Experience",
+                img: "https://icongr.am/entypo/briefcase.svg?size=128&color=000000",
+                experiences: [
+                    {title: "Apprentice", company:"General Assembly", date: "Mar 2023 - Jun 2023", description: "Software Engineering Bootcamp"},
+                    {title: "Independent Developer", company:"Self Employed", date: "2020 - Present", description: "Self taught iOS development. Designing, developing, deploying apps."},
+                    {title: "Florist", company:"Angelones Florist", date: "Feb 2021 - Present", description: "General Florist"},
+                ]
+            },
+            education: {
+                header: "Education",
+                img: "https://icongr.am/entypo/book.svg?size=128&color=000000",
+                experiences: [
+                    {title: "Bootcamp", company:"General Assembly", date: "Mar 2023 - Jun 2023", description: "Bootcamp and apprenticeship. JavaScript, React, HTML, CSS."},    
+                    {title: "Async Course", company:"Udemy", date: "Completed Jan 2022", description: "iOS 14 & Swift - The Complete iOS Developer Bootcamp"},    
+                    {title: "Associates Degree", company:"Raritan Valley Community College", date: "Sep 2017 - May 2020", description: "General Studies: Arts & Sciences"},
+                ]
             }
         }
     },
