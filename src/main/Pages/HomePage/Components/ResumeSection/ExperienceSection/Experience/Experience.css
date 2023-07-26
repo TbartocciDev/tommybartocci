@@ -20,14 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6vh;
+    max-width: 60%;
+    max-height: 6vh;
     aspect-ratio: 1;
     background-color: white;
     border-radius: 50%;
     z-index: 1;
 }
 .Experience img {
-    height: 65%;    
+    height: 65%;
 }
 .Experience .line {
     position: absolute;
@@ -41,8 +42,5 @@
     .Experience {
         padding-top: 35px;
         grid-template-columns: 22% 22% 56%;
-    }
-    .Experience .img {
-        height: 55px;
     }
 }

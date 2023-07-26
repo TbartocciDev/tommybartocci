@@ -1,21 +1,21 @@
 .StatusBar {
     margin-top: 2rem;
-    height: 6vh;
+    height: 50px;
     min-height: 40px;
     display: flex;
     align-items: center;
     width: fit-content;
-    border-radius: 3vh;
-    padding-inline: 1rem;
+    border-radius: 25px;
+    padding-inline: 15px;
     transition: 1s ease;
 }
 .StatusBar .circle {
-    height: 50%;
+    height: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 .StatusBar h2 {
-    padding-left: 1vw;
+    padding-left: 10px;
     white-space: nowrap;
     background: linear-gradient(90deg, #af0f0f, #fff, #000);
     background-repeat: no-repeat;
@@ -58,8 +58,6 @@
     color: var(--exploringLight);
 }
 
-
-
 @keyframes glimmer {
     0% {
         background-position: -500%;
@@ -74,5 +72,11 @@
     100% {
         scale: 100%;
         background-position: 500%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .StatusBar {
+        max-width: 100%;
     }
 }
