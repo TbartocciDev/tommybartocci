@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&family=Roboto&family=Sofia+Sans&display=swap');
 :root {
-  --openLight: rgb(16, 185, 16, 0.6);;
-  --openDark: rgba(4, 105, 9, 0.7);
+  --openLight: rgba(72, 228, 72, 0.6);;
+  --openDark: rgba(5, 83, 9, 0.7);
   --closedLight: red;
   --closedDark: rgba(112, 7, 7, 0.7);
   --exploringLight: rgb(34, 57, 235);
