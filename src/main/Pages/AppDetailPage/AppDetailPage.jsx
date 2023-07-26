@@ -3,6 +3,7 @@ import "./AppDetailPage.css"
 import { useParams } from "react-router"
 
 import SummarySection from "./Components/SummarySection/SummarySection"
+import InstructionsSection from "./Components/InstructionsSection/InstructionsSection"
 
 export default function AppDetailPage({ data }) {
 
@@ -13,6 +14,7 @@ export default function AppDetailPage({ data }) {
         <main className="AppDetailPage" id="main-page">
             <div className="content" id="page-content">
                 <SummarySection data={app}/>
+                <InstructionsSection data={app}/>
             </div>
         </main>
     )

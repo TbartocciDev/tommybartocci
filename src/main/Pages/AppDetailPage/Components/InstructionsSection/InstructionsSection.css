@@ -1,0 +1,18 @@
+.InstructionsSection .instructions-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4vw;
+}
+.InstructionsSection h1 {
+    padding-bottom: 4vh;
+}
+.InstructionsSection h3 {
+    font-weight: 100;
+    color: gray;
+}
+
+@media (max-width: 1100px) {
+    .InstructionsSection .instructions-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

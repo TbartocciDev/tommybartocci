@@ -50,9 +50,9 @@ const Data = {
     
                     ],
                     homeScreen: "/mockups/encryptor/home",
-                    howItWorks: [
+                    instructions: [
                         {img: "/mockups/encryptor/howto", title: "Write Messages", summary: "Users can write messages"},
-                        {img: "", title: "Read Messages", summary: "Users can read messages"}
+                        {img: "/mockups/encryptor/howto", title: "Read Messages", summary: "Users can read messages"}
                     ],
                     previews: [
                         "/mockups/encryptor/encryptor",
