@@ -1,0 +1,25 @@
+.AppLink {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: underline;
+    height: 8vh;
+}
+.AppLink img {
+    height: 100%;
+}
+.AppLink #app-store {
+    object-fit: contain;
+}
+.AppLink #logo {
+    padding-left: 10px;
+}
+
+@media (max-width: 1100px) {
+    .AppLink {
+        justify-content: center;
+    }
+    .AppLink #app-store {
+        padding-bottom: 4vh;
+    }
+}

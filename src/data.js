@@ -61,12 +61,12 @@ const Data = {
                     ],
                     links: [
                         {
-                            title: "View Project",
-                            url: "https://www.google.com/"
+                            title: "App Store",
+                            url: "https://apps.apple.com/us/app/the-encryptor/id1610639210"
                         },
                         {
                             title: "View Code",
-                            url: "https://www.google.com/"
+                            url: "https://github.com/TbartocciDev/EncryptionApp"
                         },
                     ],
                     projectType: "On iOS Store",
