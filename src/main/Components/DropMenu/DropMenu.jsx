@@ -9,6 +9,7 @@ export default function DropMenu({ data }) {
         const dropShadow = document.querySelector('.menu-shadow')
         dropMenu.setAttribute('id','hiddenDrop')
         dropShadow.setAttribute('id','hiddenShadow')
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
 
