@@ -11,10 +11,10 @@ const Data = {
                 title: "About",
                 url: "/About"
             },
-            {
-                title: "Contact",
-                url: "/Contact"
-            },
+            // {
+            //     title: "Contact",
+            //     url: "/Contact"
+            // },
         ]
     },
     HomePage: {
