@@ -1,9 +1,26 @@
 import "./AppCard.css"
 
 import { Link } from "react-router-dom"
+import { useState } from "react";
 
-export default function AppCard({ data }) {
+export default function AppCard({ data  }) {
 
+    if (!sessionStorage.getItem(`splashMode`)) {
+        sessionStorage.setItem(`splashMode`,'light')
+    }
+    
+    const [mode, setMode] = useState(sessionStorage.getItem(`splashMode`));
+
+    function handleAppClick() {
+        if (mode === "light") {
+            sessionStorage.setItem(`splashMode`,'dark')
+            setMode(sessionStorage.getItem(`splashMode`))
+        } else {
+            sessionStorage.setItem(`splashMode`,'light')
+            setMode(sessionStorage.getItem(`splashMode`))
+        }
+    }
+    
     function handleLinkClick() {
         document.body.scrollTop = document.documentElement.scrollTop = 0
     }
@@ -11,7 +28,9 @@ export default function AppCard({ data }) {
     return (
         <div className="AppCard">
             <div className="img">
-                <img src={process.env.PUBLIC_URL+data.hookScreen+'dark.png'} alt="" />
+                <img src={process.env.PUBLIC_URL+data.hookScreen+mode+'.png'} 
+                    alt=""
+                    onClick={handleAppClick}/>
             </div>
             <div className="app-info">
                 <img src={process.env.PUBLIC_URL+data.logo} alt="" className="logo-img"/>

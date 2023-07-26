@@ -8,8 +8,8 @@ export default function InstructionsSection({ data }) {
             <div className="section-content">
                 <h1>How It Works</h1>
                 <div className="instructions-container">
-                    {data.instructions.map((instr) => (
-                        <Instruction data={instr}/>
+                    {data.instructions.map((instr, index) => (
+                        <Instruction data={instr} key={index} index={index}/>
                     ))}
                 </div>
             </div>

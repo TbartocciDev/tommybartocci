@@ -13,7 +13,7 @@ export default function ContactPage() {
     return (
         <main className="ContactPage" id="main-page">
             <div className="content" id="page-content">
-                <h1>Contact Page</h1>
+                <h1>Coming soon...</h1>
             </div>
         </main>
     )

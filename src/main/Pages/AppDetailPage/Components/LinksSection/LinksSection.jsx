@@ -6,8 +6,8 @@ export default function LinksSection({ data }) {
     return (
         <main className="LinksSection" id="main-section">
             <div className="section-content">
-                {data.map((link) => (
-                    <AppLink data={link}/>
+                {data.map((link, key) => (
+                    <AppLink data={link} key={key}/>
                 ))}
             </div>
         </main>

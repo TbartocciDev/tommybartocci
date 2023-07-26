@@ -15,6 +15,7 @@ import AppDetailPage from './main/Pages/AppDetailPage/AppDetailPage';
 
 function App() {
 
+  const [mode, setMode] = useState("light");
   const [page, setPage] = useState("home");
   const [subject, setSubject] = useState("hobbies");
 
@@ -26,7 +27,10 @@ function App() {
         <Route path='/' element={
           <HomePage
             data={appData.HomePage}
-            setPage={setPage}/>}></Route>
+            setPage={setPage}
+            mode={mode}
+            setMode={setMode}/>}>
+        </Route>
         <Route path='/about' element={
           <AboutPage 
             data={appData.AboutPage}
@@ -37,6 +41,8 @@ function App() {
         <Route path='/:appName' element={
           <AppDetailPage
           data={appData.HomePage.appsSection.applications}
+          mode={mode}
+          setMode={setMode}
           />}>
         </Route>
         <Route path='/contact' element={<ContactPage/>}></Route>

@@ -1,3 +1,7 @@
 .ExperienceSection {
-    padding-top: 6vh;
+    padding-top: 4vh;
+}
+.ExperienceSection h2 {
+    color: white;
+    text-decoration: underline;
 }

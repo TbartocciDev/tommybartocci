@@ -1,8 +1,28 @@
 import "./SummarySection.css"
 
+import { useEffect, useState } from 'react';
+
 import Techs from "./Techs/Techs"
 
 export default function SummarySection({ data }) {
+
+    if (!sessionStorage.getItem(`homeMode`)) {
+        sessionStorage.setItem(`homeMode`,'light')
+    }
+    
+    const [mode, setMode] = useState(sessionStorage.getItem(`homeMode`));
+
+    function handleAppClick() {
+        console.log(`mode: ${mode}`)
+        if (mode === "light") {
+            sessionStorage.setItem(`homeMode`,'dark')
+            setMode(sessionStorage.getItem(`homeMode`))
+        } else {
+            sessionStorage.setItem(`homeMode`,'light')
+            setMode(sessionStorage.getItem(`homeMode`))
+        }
+    }
+
     return (
         <main className="SummarySection" id="main-section">
             <div className="section-content">
@@ -13,7 +33,8 @@ export default function SummarySection({ data }) {
                     <Techs data={data.technologies}/>
                 </div>
                 <div className="img">
-                    <img src={process.env.PUBLIC_URL+data.homeScreen+'dark.png'} alt="" />
+                    <img src={process.env.PUBLIC_URL+data.homeScreen+mode+'.png'} 
+                        alt="" onClick={handleAppClick}/>
                 </div>
             </div>
         </main>

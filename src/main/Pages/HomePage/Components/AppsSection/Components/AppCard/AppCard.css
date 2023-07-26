@@ -19,6 +19,9 @@
     max-width: 100%;
     object-fit: contain;
 }
+.AppCard .img img:hover {
+    cursor: pointer;
+}
 .AppCard .app-info {
     padding-top: 2vh;
     display: flex;

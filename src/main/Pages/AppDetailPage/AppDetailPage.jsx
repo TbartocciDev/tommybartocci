@@ -15,7 +15,7 @@ export default function AppDetailPage({ data }) {
         <main className="AppDetailPage" id="main-page">
             <div className="content" id="page-content">
                 <SummarySection data={app}/>
-                <InstructionsSection data={app}/>
+                <InstructionsSection data={app} />
                 <LinksSection data={app.links}/>
             </div>
         </main>
