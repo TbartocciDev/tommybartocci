@@ -1,0 +1,17 @@
+.AppsSection h2 {
+    color: gray;
+    font-weight: 500;
+}
+.apps-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2vw;
+}
+
+@media (max-width: 1100px) {
+    .apps-container {
+        grid-template-columns: 1fr;
+        gap: 4vh;
+    }
+}

@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 8vh;
     position: fixed; 
     z-index: 2;
 }
@@ -47,6 +47,6 @@
     opacity: 1;
 }
 
-@media (max-width: 800px) {
-
+@media (max-width: 1100px) {
+    
 }

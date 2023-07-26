@@ -1,0 +1,57 @@
+.AppCard {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+    /* justify-content: end; */
+}
+.AppCard h2 {
+    color: white;
+}
+.AppCard h3 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: gray;
+    font-weight: 100;
+}
+.AppCard .img {
+    height: 50vh;
+}
+.AppCard .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.AppCard .app-info {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.AppCard .logo-img {
+    height: 7vh;
+    aspect-ratio: 1;
+    border-radius: 1vh;
+    margin-right: 2vw;
+    background-color: blue;
+}
+.AppCard .link {
+    width: 40%;
+}
+.AppCard .details-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 96, 128, 0.7);
+    border-radius: 1.5vh;
+    transition: 1s ease;
+}
+.AppCard .details-btn h2 {
+    width: 100%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    text-align: center;
+}
+.AppCard .details-btn:hover {
+    transform: scale(103%);
+}

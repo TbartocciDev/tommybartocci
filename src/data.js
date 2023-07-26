@@ -27,6 +27,53 @@ const Data = {
                 info: "Looking for a new opportunity"
             }
         },
+        appsSection: {
+            header: "Applications",
+            subheader: "A selection of projects I've built",
+            applications: [
+                {   
+                    hookScreen: "/mockups/encryptor/hook",
+                    name: "The Encryptor",
+                    logo: "/mockups/encryptor/logo.png",
+                    brief: "An app that allows users to read and write secret messages.",
+                    role: "Sole Developer & Designer",
+                    summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
+                    alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
+                    the standard English alphabet into something unreadable, then back to readable.`,
+                    technologies: [
+                        "Swift",
+                        "Xcode",
+                        "Model View Controller(MVC)",
+                        "Core Data",
+                        "UiKit",
+                        "Light/Dark Support"
+    
+                    ],
+                    homeScreen: "/mockups/encryptor/home",
+                    howItWorks: [
+                        {img: "/mockups/encryptor/howto", title: "Write Messages", summary: "Users can write messages"},
+                        {img: "", title: "Read Messages", summary: "Users can read messages"}
+                    ],
+                    previews: [
+                        "/mockups/encryptor/encryptor",
+                        "/mockups/encryptor/howto",
+                        "/mockups/encryptor/about",
+                    ],
+                    links: [
+                        {
+                            title: "View Project",
+                            url: "https://www.google.com/"
+                        },
+                        {
+                            title: "View Code",
+                            url: "https://www.google.com/"
+                        },
+                    ],
+                    projectType: "On iOS Store",
+                    appType: "iOS",
+                },
+            ]
+        },
         resumeSection: {
             header: "Resume",
             work: {
