@@ -2,6 +2,7 @@ import "./HomePage.css";
 
 import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react';
+import HeroSection from "./Components/HeroSection/HeroSection";
 
 export default function HomePage({ data, setPage }) {
     
@@ -15,7 +16,7 @@ export default function HomePage({ data, setPage }) {
     return (
         <main className="HomePage" id="main-page">
             <div className="content" id="page-content">
-                <h1>Home Page</h1>
+                <HeroSection data={data.heroSection}/>
             </div>
         </main>
     )

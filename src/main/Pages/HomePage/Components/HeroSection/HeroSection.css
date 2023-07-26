@@ -1,0 +1,17 @@
+:root {
+    --CYellow: #c8ac60;
+    --CBlue: #276ab9;
+    --CRed: #b75854;
+}
+.HeroSection {
+    height: 60vh;
+}
+.HeroSection .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.HeroSection h2 {
+    color: gray;
+}

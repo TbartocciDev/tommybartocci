@@ -22,6 +22,10 @@ body {
   width: 100%;
   padding-bottom: 8vh;
 }
+
+.section-content {
+  height: 100%;
+}
 a:active, a:visited, a:link {
   text-decoration: none;
   color: white;

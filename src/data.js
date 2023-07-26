@@ -15,6 +15,17 @@ const Data = {
             },
         ]
     },
+    HomePage: {
+        heroSection: {
+            header: "Greetings, I'm Tommy!",
+            subheader: "Software Engineer from New Jersey.",
+            summary: "I specialize in iOS and web development.",
+            status: {
+                status: "open",
+                info: "Looking for a new opportunity"
+            }
+        }
+    },
     AboutPage: {
         introSection: {
             header: "Who is Tommy?",

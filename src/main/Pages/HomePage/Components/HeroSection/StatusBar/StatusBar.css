@@ -1,0 +1,87 @@
+:root {
+    --openLight: rgb(16, 185, 16, 0.6);;
+    --openDark: rgba(4, 105, 9, 0.7);
+    --closedLight: red;
+    --closedDark: rgba(112, 7, 7, 0.7);
+    --exploringLight: rgb(55, 76, 239);
+    --exploringDark: rgba(7, 7, 160, 0.7);
+}
+.StatusBar {
+    margin-top: 2rem;
+    height: 4vh;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 3vh;
+    padding-inline: 1rem;
+    transition: 1s ease;
+}
+.StatusBar .circle {
+    height: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.StatusBar h2 {
+    /* font-size: 2vh; */
+    padding-left: 1vw;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #af0f0f, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: glimmer 3.5s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: var(--openLight);
+}
+.StatusBar:hover {
+    transform: scale(103%);
+}
+
+#open {
+    background-color: var(--openDark);
+}
+#open .circle {
+    background-color: var(--openLight);
+}
+#open h2 {
+    color: var(--openLight);
+}
+
+#closed {
+    background-color: var(--closedDark);
+}
+#closed .circle {
+    background-color: var(--closedLight);
+}
+#closed h2 {
+    color: var(--closedLight);
+}
+
+#exploring {
+    background-color: var(--exploringDark);
+}
+#exploring .circle {
+    background-color: var(--exploringLight);
+}
+#exploring h2 {
+    color: var(--exploringLight);
+}
+
+
+
+@keyframes glimmer {
+    0% {
+        background-position: -500%;
+        scale: 100%;
+    }
+    10% {
+        background-position: -500%;
+    }
+    50% {
+        scale: 101%;
+    }
+    100% {
+        scale: 100%;
+        background-position: 500%;
+    }
+}
