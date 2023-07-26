@@ -8,8 +8,8 @@
 }
 .StatusBar {
     margin-top: 2rem;
-    height: 4vh;
-    min-height: 30px;
+    height: 6vh;
+    min-height: 40px;
     display: flex;
     align-items: center;
     width: fit-content;

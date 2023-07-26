@@ -5,15 +5,15 @@
 .SummarySection .app-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .SummarySection .img {
     display: flex;
     justify-content: end;
-    height: 60vh;
+    align-items: center;
+    height: 100%;
 }
 .SummarySection img {
-    height: 100%;
+    height: 60vh;
     width: 100%;
     object-fit: contain;
 }

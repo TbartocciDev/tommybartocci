@@ -5,6 +5,9 @@
     text-decoration: underline;
     height: 8vh;
 }
+.AppLink h2 {
+    white-space: nowrap;
+}
 .AppLink img {
     height: 100%;
 }
