@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&family=Roboto&family=Sofia+Sans&display=swap');
-
+:root {
+  --openLight: rgb(16, 185, 16, 0.6);;
+  --openDark: rgba(4, 105, 9, 0.7);
+  --closedLight: red;
+  --closedDark: rgba(112, 7, 7, 0.7);
+  --exploringLight: rgb(34, 57, 235);
+  --exploringDark: rgba(19, 19, 234, 0.7);
+  --appDetailLight: rgb(69, 147, 225);
+  --appDetailDark: rgba(7, 53, 123, 0.7);
+}
 * {
   margin: 0;
   padding: 0;

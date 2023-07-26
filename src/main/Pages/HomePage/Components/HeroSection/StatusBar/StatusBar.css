@@ -1,11 +1,3 @@
-:root {
-    --openLight: rgb(16, 185, 16, 0.6);;
-    --openDark: rgba(4, 105, 9, 0.7);
-    --closedLight: red;
-    --closedDark: rgba(112, 7, 7, 0.7);
-    --exploringLight: rgb(21, 44, 215);
-    --exploringDark: rgba(7, 7, 160, 0.7);
-}
 .StatusBar {
     margin-top: 2rem;
     height: 6vh;
@@ -23,7 +15,6 @@
     border-radius: 50%;
 }
 .StatusBar h2 {
-    /* font-size: 2vh; */
     padding-left: 1vw;
     white-space: nowrap;
     background: linear-gradient(90deg, #af0f0f, #fff, #000);

@@ -10,7 +10,6 @@
     margin-top: 2vh;
     margin-bottom: 2vh;
     color: gray;
-    font-weight: 100;
 }
 .AppCard .img {
     max-height: 50vh;
@@ -40,14 +39,14 @@
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: var(--exploringDark);
+    background-color: var(--appDetailDark);
     border-radius: 1.5vh;
     transition: 1s ease;
 }
 .AppCard .details-btn h2 {
     width: 100%;
     padding: 1.5vh;
-    color: var(--exploringLight);
+    color: var(--appDetailLight);
     text-align: center;
     white-space: nowrap;
     background: linear-gradient(90deg, #af0f0f, #fff, #000);
@@ -55,7 +54,7 @@
     background-size: 80%;
     animation: glimmer 3.5s linear infinite;
     background-clip: text;
-    -webkit-text-fill-color: var(--exploringLight);
+    -webkit-text-fill-color: var(--appDetailLight);
 }
 .AppCard .details-btn:hover {
     transform: scale(103%);
