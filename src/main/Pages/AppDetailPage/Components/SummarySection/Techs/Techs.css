@@ -1,0 +1,13 @@
+.Techs ul{
+    padding-left: 20px;
+}
+.Techs ul h3 {
+    font-weight: 100;
+    padding-bottom: 0vh;
+}
+
+@media (max-width: 1100px) {
+    .Techs {
+        padding-bottom: 4vh;
+    }
+}

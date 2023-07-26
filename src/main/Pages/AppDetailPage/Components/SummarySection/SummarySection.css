@@ -1,0 +1,39 @@
+.SummarySection .section-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.SummarySection .app-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SummarySection .img {
+    display: flex;
+    justify-content: end;
+    height: 60vh;
+}
+.SummarySection img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.SummarySection h1{
+    padding-bottom: 2vh;
+}
+.SummarySection h2{
+    padding-bottom: 2vh;
+    color: gray;
+    font-weight: 600;
+}
+.SummarySection h3{
+    padding-bottom: 2vh;
+    font-weight: 100;
+}
+
+@media (max-width: 1100px) {
+    .SummarySection .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

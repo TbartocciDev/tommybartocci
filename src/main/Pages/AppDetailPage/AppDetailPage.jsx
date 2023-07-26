@@ -2,6 +2,8 @@ import "./AppDetailPage.css"
 
 import { useParams } from "react-router"
 
+import SummarySection from "./Components/SummarySection/SummarySection"
+
 export default function AppDetailPage({ data }) {
 
     const { appName } = useParams()
@@ -10,7 +12,7 @@ export default function AppDetailPage({ data }) {
     return (
         <main className="AppDetailPage" id="main-page">
             <div className="content" id="page-content">
-                <h1>{app.name}</h1>
+                <SummarySection data={app}/>
             </div>
         </main>
     )
