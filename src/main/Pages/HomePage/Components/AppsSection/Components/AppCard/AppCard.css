@@ -4,12 +4,12 @@
     padding-top: 4vh;
 }
 .AppCard h2 {
-    color: white;
+    color: var(--lightText);
 }
 .AppCard h3 {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    color: gray;
+    color: var(--darkText);
 }
 .AppCard .img {
     max-height: 50vh;

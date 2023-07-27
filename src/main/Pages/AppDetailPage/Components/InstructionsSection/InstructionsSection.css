@@ -7,7 +7,7 @@
     padding-bottom: 4vh;
 }
 .InstructionsSection h3 {
-    color: gray;
+    color: var(--darkText);
 }
 
 @media (max-width: 1100px) {

@@ -1,8 +1,8 @@
 .InterestView h3 {
-    color: gray;
+    color: var(--darkText);
     padding-top: 2vh;
 }
 
 .InterestView span {
-    color: white;
+    color: var(--lightText);
 }

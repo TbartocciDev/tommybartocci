@@ -1,3 +1,6 @@
+.SummarySection {
+    padding-top: 4vh;
+}
 .SummarySection .section-content {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -25,7 +28,7 @@
 }
 .SummarySection h2{
     padding-bottom: 2vh;
-    color: gray;
+    color: var(--darkText);
 }
 .SummarySection h3{
     padding-bottom: 2vh;

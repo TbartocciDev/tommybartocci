@@ -31,7 +31,7 @@
 }
 .Experience .line {
     position: absolute;
-    background-color: rgb(121, 17, 17);
+    background-color: var(--resumeRed);
     width: 10px;
     height: 100%;
     z-index: 0;
@@ -44,6 +44,7 @@
     }
     .Experience .img {
         width: 60%;
+        max-width: 60px;
         max-height: 100%;
     }
 }

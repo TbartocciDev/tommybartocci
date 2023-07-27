@@ -99,12 +99,10 @@ const Data = {
     AboutPage: {
         introSection: {
             header: "Who is Tommy?",
-            summary: `Developing applications is something that truly fascinates me on a daily basis, each task is like 
-            solving a piece to a puzzle. I love learning about new technologies and concepts along the way as well.`,
-            background: `I believe my background helped shape me for this type of industry. I grew up in two different worlds: 
-            One with creative freedom that my family provided me,
-            and one with discipline and work ethic the world of sports provided me.`,
-            finalWords: "Thank you for visiting my website! If you have any projects, comments or suggestions, please reach out!"
+            summary: `I'm a self motivated developer who loves learning new technologies and concepts along the way. 
+            I see development similar to solving a puzzle, many pieces come together to make a great product.`,
+            background: `I believe I possess the creativity and discipline/work ethic to thrive in this industry.`,
+            finalWords: "Thank you for visiting my website! If you have any projects ideas, comments or suggestions, please reach out!"
         },
         interestsSection: {
             title: "Outside of Work",

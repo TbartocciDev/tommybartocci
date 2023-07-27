@@ -2,7 +2,7 @@
     padding-top: 4vh;
 }
 .ExperienceSection h2 {
-    color: white;
+    color: var(--lightText);
     text-decoration: underline;
 }
 

@@ -5,7 +5,7 @@
     padding-bottom: 2vh;
 }
 .IntroSection h3 {
-    color: gray;
+    color: var(--darkText);
 }
 .IntroSection .summary {
     display: grid;

@@ -78,5 +78,7 @@
 @media (max-width: 1100px) {
     .StatusBar {
         max-width: 100%;
+    } .StatusBar h3 {
+        font-size: 23px;
     }
 }
