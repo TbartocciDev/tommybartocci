@@ -6,7 +6,7 @@ export default function InstructionsSection({ data }) {
     return (
         <main className="InstructionsSection" id="main-section">
             <div className="section-content">
-                <h1>How It Works</h1>
+                <h1>Features</h1>
                 <div className="instructions-container">
                     {data.instructions.map((instr, index) => (
                         <Instruction data={instr} key={index} index={index}/>

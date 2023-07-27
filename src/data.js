@@ -51,13 +51,10 @@ const Data = {
                     ],
                     homeScreen: "/mockups/encryptor/home",
                     instructions: [
-                        {img: "/mockups/encryptor/howto", title: "Write Messages", summary: "Users can write messages"},
-                        {img: "/mockups/encryptor/howto", title: "Read Messages", summary: "Users can read messages"}
-                    ],
-                    previews: [
-                        "/mockups/encryptor/encryptor",
-                        "/mockups/encryptor/howto",
-                        "/mockups/encryptor/about",
+                        {img: "/mockups/encryptor/home", title: "Navigate", summary: "Users can naviagate the app from the home screen"},
+                        {img: "/mockups/encryptor/encryptor", title: "Encrypt Decrypt", summary: "Users can read and write messages"},
+                        {img: "/mockups/encryptor/howto", title: "Follow Walkthrough", summary: "Users can user a step by step walkthrough"},
+                        {img: "/mockups/encryptor/about", title: "Learn About", summary: "Users view the about page"},
                     ],
                     links: [
                         {
@@ -69,9 +66,42 @@ const Data = {
                             url: "https://github.com/TbartocciDev/EncryptionApp"
                         },
                     ],
-                    projectType: "On iOS Store",
-                    appType: "iOS",
                 },
+                // {   
+                //     hookScreen: "/mockups/encryptor/hook",
+                //     name: "Geographi",
+                //     logo: "/mockups/encryptor/logo.png",
+                //     brief: "A game based on all countries geography and information.",
+                //     role: "Sole Developer & Designer",
+                //     summary: `A level based iOS game for users to gradually learn about the countries of the world
+                //     through memorizaiton type games. Users can use search the database to get more detailed info, play games 
+                //     to build muscle memory, and check their progress on a world map. This app has not yet been published.`,
+                //     technologies: [
+                //         "Swift",
+                //         "Xcode",
+                //         "Model View Controller(MVC)",
+                //         "Core Data",
+                //         "UiKit",
+                //         "Light/Dark Support"
+    
+                //     ],
+                //     homeScreen: "/mockups/encryptor/home",
+                //     instructions: [
+                //         {img: "/mockups/encryptor/howto", title: "Write Messages", summary: "Users can write messages"},
+                //         {img: "/mockups/encryptor/howto", title: "Read Messages", summary: "Users can read messages"}
+                //     ],
+                //     previews: [
+                //         "/mockups/encryptor/encryptor",
+                //         "/mockups/encryptor/howto",
+                //         "/mockups/encryptor/about",
+                //     ],
+                //     links: [
+                //         {
+                //             title: "View Code",
+                //             url: "https://github.com/TbartocciDev/EncryptionApp"
+                //         },
+                //     ],
+                // },
             ]
         },
         resumeSection: {
