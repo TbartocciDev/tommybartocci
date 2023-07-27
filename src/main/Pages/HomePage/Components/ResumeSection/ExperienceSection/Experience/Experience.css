@@ -43,7 +43,7 @@
         grid-template-columns: 25% 20% 55%;
     }
     .Experience .img {
-        max-width: 70%;
-        max-height: 60px;
+        width: 60%;
+        max-height: 100%;
     }
 }
