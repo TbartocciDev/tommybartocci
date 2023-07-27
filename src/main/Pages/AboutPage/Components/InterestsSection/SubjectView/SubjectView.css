@@ -27,9 +27,7 @@
 }
 .SubjectView img {
     height: 100%;
-    width: 70%;
-    max-height: 50vh;
-    max-width: 23vw;
+    aspect-ratio: 1.35 / 2;
 }
 
 @media (max-width: 1100px) {
@@ -42,6 +40,6 @@
     }
     .SubjectView img {
         max-width: 300px;
-        max-height: 400px;
+        max-height: 300px;
     }
 }
