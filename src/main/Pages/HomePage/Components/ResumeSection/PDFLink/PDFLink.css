@@ -1,0 +1,16 @@
+.PDFLink {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 50px;
+    text-decoration: underline;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--resumeRed);
+}
+.PDFLink img {
+    height: 100%;
+    margin-left: 20px;
+}
