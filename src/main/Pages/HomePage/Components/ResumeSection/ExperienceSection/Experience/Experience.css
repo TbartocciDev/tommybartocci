@@ -40,10 +40,10 @@
 @media (max-width: 1100px) {
     .Experience {
         padding-top: 35px;
-        grid-template-columns: 22% 22% 56%;
+        grid-template-columns: 25% 20% 55%;
     }
     .Experience .img {
-        max-width: 50%;
+        max-width: 70%;
         max-height: 60px;
     }
 }
