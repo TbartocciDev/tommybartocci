@@ -67,41 +67,46 @@ const Data = {
                         },
                     ],
                 },
-                // {   
-                //     hookScreen: "/mockups/encryptor/hook",
-                //     name: "Geographi",
-                //     logo: "/mockups/encryptor/logo.png",
-                //     brief: "A game based on all countries geography and information.",
-                //     role: "Sole Developer & Designer",
-                //     summary: `A level based iOS game for users to gradually learn about the countries of the world
-                //     through memorizaiton type games. Users can use search the database to get more detailed info, play games 
-                //     to build muscle memory, and check their progress on a world map. This app has not yet been published.`,
-                //     technologies: [
-                //         "Swift",
-                //         "Xcode",
-                //         "Model View Controller(MVC)",
-                //         "Core Data",
-                //         "UiKit",
-                //         "Light/Dark Support"
-    
-                //     ],
-                //     homeScreen: "/mockups/encryptor/home",
-                //     instructions: [
-                //         {img: "/mockups/encryptor/howto", title: "Write Messages", summary: "Users can write messages"},
-                //         {img: "/mockups/encryptor/howto", title: "Read Messages", summary: "Users can read messages"}
-                //     ],
-                //     previews: [
-                //         "/mockups/encryptor/encryptor",
-                //         "/mockups/encryptor/howto",
-                //         "/mockups/encryptor/about",
-                //     ],
-                //     links: [
-                //         {
-                //             title: "View Code",
-                //             url: "https://github.com/TbartocciDev/EncryptionApp"
-                //         },
-                //     ],
-                // },
+                {   
+                    hookScreen: "/mockups/encryptor/hook",
+                    name: "Geographi",
+                    logo: "/mockups/encryptor/logo.png",
+                    brief: "A game based on all countries geography and information.",
+                    role: "Sole Developer & Designer",
+                    summary: `A level based iOS game for users to gradually learn about the countries of the world
+                    through memorizaiton type games. Users can use search the database to get more detailed info, play games 
+                    to build muscle memory, and check their progress on a world map. This app has not yet been published.`,
+                    technologies: [
+                        "Swift",
+                        "Xcode",
+                        "Model View Controller(MVC)",
+                        "API Integration",
+                        "Animations",
+                        "Core Data",
+                        "UiKit",
+                        "Light/Dark Support"
+                    ],
+                    homeScreen: "/mockups/geographi/games",
+                    instructions: [
+                        {img: "/mockups/geographi/loading", title: "Loading Animation", summary: "A progress bar while API data is parsed"},
+                        {img: "/mockups/geographi/search", title: "Search", summary: "users can search the database"},
+                        {img: "/mockups/geographi/filtered", title: "Filter", summary: "Users can filter the database"},
+                        {img: "/mockups/geographi/detail", title: "Detailed View", summary: "Users read info about each country"},
+                        {img: "/mockups/geographi/games", title: "Level Selection", summary: "Users can select unlocked levels"},
+                        {img: "/mockups/geographi/map", title: "View Progress", summary: "Users core data will fill out map completion"},
+                    ],
+                    previews: [
+                        "/mockups/encryptor/encryptor",
+                        "/mockups/encryptor/howto",
+                        "/mockups/encryptor/about",
+                    ],
+                    links: [
+                        {
+                            title: "View Code",
+                            url: "https://github.com/TbartocciDev/EncryptionApp"
+                        },
+                    ],
+                },
             ]
         },
         resumeSection: {

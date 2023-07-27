@@ -2,23 +2,23 @@ import "./Instruction.css"
 
 import { useEffect, useState } from 'react';
 
-export default function Instruction({ data, index }) {
+export default function Instruction({ data, index, name }) {
 
     
-    if (!sessionStorage.getItem(`instruction${index}`)) {
-        sessionStorage.setItem(`instruction${index}`,'light')
+    if (!sessionStorage.getItem(`instruction${name}${index}`)) {
+        sessionStorage.setItem(`instruction${name}${index}`,'light')
     }
     
-    const [mode, setMode] = useState(sessionStorage.getItem(`instruction${index}`));
+    const [mode, setMode] = useState(sessionStorage.getItem(`instruction${name}${index}`));
 
     function handleAppClick() {
         console.log(`mode: ${mode}`)
         if (mode === "light") {
-            sessionStorage.setItem(`instruction${index}`,'dark')
-            setMode(sessionStorage.getItem(`instruction${index}`))
+            sessionStorage.setItem(`instruction${name}${index}`,'dark')
+            setMode(sessionStorage.getItem(`instruction${name}${index}`))
         } else {
-            sessionStorage.setItem(`instruction${index}`,'light')
-            setMode(sessionStorage.getItem(`instruction${index}`))
+            sessionStorage.setItem(`instruction${name}${index}`,'light')
+            setMode(sessionStorage.getItem(`instruction${name}${index}`))
         }
     }
 

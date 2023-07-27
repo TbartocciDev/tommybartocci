@@ -6,20 +6,20 @@ import Techs from "./Techs/Techs"
 
 export default function SummarySection({ data }) {
 
-    if (!sessionStorage.getItem(`homeMode`)) {
-        sessionStorage.setItem(`homeMode`,'light')
+    if (!sessionStorage.getItem(`homeMode${data.name}`)) {
+        sessionStorage.setItem(`homeMode${data.name}`,'light')
     }
     
-    const [mode, setMode] = useState(sessionStorage.getItem(`homeMode`));
+    const [mode, setMode] = useState(sessionStorage.getItem(`homeMode${data.name}`));
 
     function handleAppClick() {
         console.log(`mode: ${mode}`)
         if (mode === "light") {
-            sessionStorage.setItem(`homeMode`,'dark')
-            setMode(sessionStorage.getItem(`homeMode`))
+            sessionStorage.setItem(`homeMode${data.name}`,'dark')
+            setMode(sessionStorage.getItem(`homeMode${data.name}`))
         } else {
-            sessionStorage.setItem(`homeMode`,'light')
-            setMode(sessionStorage.getItem(`homeMode`))
+            sessionStorage.setItem(`homeMode${data.name}`,'light')
+            setMode(sessionStorage.getItem(`homeMode${data.name}`))
         }
     }
 
