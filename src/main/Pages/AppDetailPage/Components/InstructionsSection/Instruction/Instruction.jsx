@@ -7,6 +7,7 @@ export default function Instruction({ data, index, appIndex }) {
     
     if (!sessionStorage.getItem(`instruction${appIndex}${index}`)) {
         sessionStorage.setItem(`instruction${appIndex}${index}`,'light')
+        setMode(sessionStorage.getItem(`instruction${appIndex}${index}`))
     }
     
     const [mode, setMode] = useState(sessionStorage.getItem(`instruction${appIndex}${index}`));
@@ -15,10 +16,10 @@ export default function Instruction({ data, index, appIndex }) {
         console.log(`mode: ${mode}`)
         if (mode === "light") {
             sessionStorage.setItem(`instruction${appIndex}${index}`,'dark')
-            setMode(sessionStorage.getItem(`instruction${appIndex}${index}`))
+            setMode("dark")
         } else {
             sessionStorage.setItem(`instruction${appIndex}${index}`,'light')
-            setMode(sessionStorage.getItem(`instruction${appIndex}${index}`))
+            setMode("light")
         }
     }
 
