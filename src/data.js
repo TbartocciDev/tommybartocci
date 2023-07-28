@@ -32,6 +32,7 @@ const Data = {
             subheader: "A selection of projects I've built",
             applications: [
                 {   
+                    index: 0,
                     hookScreen: "/mockups/encryptor/hook",
                     name: "The Encryptor",
                     logo: "/mockups/encryptor/logo.png",
@@ -68,6 +69,7 @@ const Data = {
                     ],
                 },
                 {   
+                    index: 1,
                     hookScreen: "/mockups/encryptor/hook",
                     name: "Geographi",
                     logo: "/mockups/encryptor/logo.png",
