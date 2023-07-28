@@ -3,11 +3,9 @@ import "./Instruction.css"
 import { useEffect, useState } from 'react';
 
 export default function Instruction({ data, index, appIndex }) {
-
     
     if (!sessionStorage.getItem(`instruction${appIndex}${index}`)) {
         sessionStorage.setItem(`instruction${appIndex}${index}`,'light')
-        setMode(sessionStorage.getItem(`instruction${appIndex}${index}`))
     }
     
     const [mode, setMode] = useState(sessionStorage.getItem(`instruction${appIndex}${index}`));
