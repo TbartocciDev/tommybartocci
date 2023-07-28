@@ -35,7 +35,7 @@ const Data = {
                     index: 0,
                     hookScreen: "/mockups/encryptor/hook",
                     name: "The Encryptor",
-                    logo: "/mockups/encryptor/logo.png",
+                    logo: "/logos/encryptor.png",
                     brief: "An app that allows users to read and write secret messages.",
                     role: "Sole Developer & Designer",
                     summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
@@ -70,9 +70,9 @@ const Data = {
                 },
                 {   
                     index: 1,
-                    hookScreen: "/mockups/encryptor/hook",
+                    hookScreen: "/mockups/geographi/hook",
                     name: "Geographi",
-                    logo: "/mockups/encryptor/logo.png",
+                    logo: "/logos/geographi.png",
                     brief: "A game based on all countries geography and information.",
                     role: "Sole Developer & Designer",
                     summary: `A level based iOS game for users to gradually learn about the countries of the world
@@ -83,12 +83,12 @@ const Data = {
                         "Xcode",
                         "Model View Controller(MVC)",
                         "API Integration",
-                        "Animations",
                         "Core Data",
+                        "Animations",
                         "UiKit",
                         "Light/Dark Support"
                     ],
-                    homeScreen: "/mockups/geographi/games",
+                    homeScreen: "/mockups/geographi/loading",
                     instructions: [
                         {img: "/mockups/geographi/loading", title: "Loading Animation", summary: "A progress bar while API data is parsed"},
                         {img: "/mockups/geographi/search", title: "Search", summary: "users can search the database"},
