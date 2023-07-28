@@ -64,7 +64,7 @@ const Data = {
                         },
                         {
                             title: "View Code",
-                            url: "https://github.com/TbartocciDev/EncryptionApp"
+                            url: "https://github.com/TbartocciDev/the-encryptor"
                         },
                     ],
                 },
@@ -105,7 +105,7 @@ const Data = {
                     links: [
                         {
                             title: "View Code",
-                            url: "https://github.com/TbartocciDev/EncryptionApp"
+                            url: "https://github.com/TbartocciDev/geographi"
                         },
                     ],
                 },
