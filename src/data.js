@@ -43,10 +43,9 @@ const Data = {
                     the standard English alphabet into something unreadable, then back to readable.`,
                     technologies: [
                         "Swift",
+                        "UIKit",
                         "Xcode",
                         "Model View Controller(MVC)",
-                        "Core Data",
-                        "UiKit",
                         "Light/Dark Support"
     
                     ],
@@ -70,6 +69,39 @@ const Data = {
                 },
                 {   
                     index: 1,
+                    hookScreen: "/mockups/contacts/hook",
+                    name: "Firebase Contacts",
+                    logo: "/logos/encryptor.png",
+                    brief: "My own version of the contacts app made programmatically.",
+                    role: "Sole Developer & Designer",
+                    summary: `An iOS App made based off the standard contacts app that Apple provides.
+                    The App features full CRUD capabilities when maintaining a contact list. Users can search
+                    their list to find a contact. The backend is hosted with Google Firebase.`,
+                    technologies: [
+                        "Swift",
+                        "UiKit",
+                        "Xcode",
+                        "Model View Controller(MVC)",
+                        "Programmatic Development",
+                        "Google Firebase",
+                        "Light/Dark Support"
+                    ],
+                    homeScreen: "/mockups/contacts/home",
+                    instructions: [
+                        {img: "/mockups/contacts/search", title: "Navigate", summary: "Users can naviagate their contact list"},
+                        {img: "/mockups/contacts/create", title: "Create", summary: "Users can create a contact by filling out at least one field"},
+                        {img: "/mockups/contacts/detail", title: "View", summary: "Users can view a contact"},
+                        {img: "/mockups/contacts/update", title: "Update", summary: "Users can update a contact"},
+                    ],
+                    links: [
+                        {
+                            title: "View Code",
+                            url: "https://github.com/TbartocciDev/firebase-contacts"
+                        },
+                    ],
+                },
+                {   
+                    index: 2,
                     hookScreen: "/mockups/geographi/hook",
                     name: "Geographi",
                     logo: "/logos/geographi.png",
@@ -83,7 +115,6 @@ const Data = {
                         "Xcode",
                         "Model View Controller(MVC)",
                         "API Integration",
-                        "Core Data",
                         "Animations",
                         "UiKit",
                         "Light/Dark Support"
@@ -127,6 +158,7 @@ const Data = {
                 img: "https://icongr.am/entypo/book.svg?size=128&color=000000",
                 experiences: [
                     {title: "Bootcamp", company:"General Assembly", date: "Mar 2023 - Jun 2023", description: "Bootcamp and apprenticeship. JavaScript, React, HTML, CSS."},    
+                    {title: "Async Course", company:"Udemy", date: "Completed Jan 2022", description: "Mastering ARKit for iOS"},    
                     {title: "Async Course", company:"Udemy", date: "Completed Jan 2022", description: "iOS 14 & Swift - The Complete iOS Developer Bootcamp"},    
                     {title: "Associates Degree", company:"Raritan Valley Community College", date: "Sep 2017 - May 2020", description: "General Studies: Arts & Sciences"},
                 ]
