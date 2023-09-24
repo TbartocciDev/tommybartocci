@@ -71,7 +71,7 @@ const Data = {
                     index: 1,
                     hookScreen: "/mockups/contacts/hook",
                     name: "Firebase Contacts",
-                    logo: "/logos/encryptor.png",
+                    logo: "/logos/contacts.png",
                     brief: "My own version of the contacts app made programmatically.",
                     role: "Sole Developer & Designer",
                     summary: `An iOS App made based off the standard contacts app that Apple provides.
